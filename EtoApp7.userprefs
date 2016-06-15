@@ -1,0 +1,12 @@
+﻿<Properties StartupItem="EtoApp7.Desktop/EtoApp7.Desktop.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="EtoApp7.Desktop/Program.cs">
+    <Files>
+      <File FileName="EtoApp7.Desktop/Program.cs" Line="12" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
