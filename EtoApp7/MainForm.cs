@@ -8,27 +8,14 @@ namespace EtoApp7
     {
         public MainForm()
         {
-            InitializeComponent(new MainFormViewModel());
-        }
-
-        private void InitializeComponent(MainFormViewModel dataContext)
-        {
             Title = "My Eto Form";
             ClientSize = new Size(400, 350);
-            DataContext = dataContext;
-
-            var button = new Button() { Text = "test" };
-            button.TextBinding.Bind(dataContext, dc => dc.Test);
-            button.Bind(tb => tb.Enabled, dataContext, dc => dc.Enabled);
-            button.Click += (_1, _2) => dataContext.F();
-
             Content = new StackLayout
             {
                 Padding = 10,
                 Items =
                 {
                     new Label() { Text = "Hello World!" },
-                    button,
                 }
             };
 
