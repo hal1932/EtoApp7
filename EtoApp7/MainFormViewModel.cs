@@ -1,5 +1,4 @@
-﻿using Microsoft.Practices.Prism.Mvvm;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,6 +20,12 @@ namespace EtoApp7
         {
             get { return _enabled; }
             set { SetProperty(ref _enabled, value); }
+        }
+
+        private DelegateCommand _testCommand;
+        public DelegateCommand TestCommand
+        {
+            get { return _testCommand = _testCommand ?? new DelegateCommand(F); }
         }
 
         public MainFormViewModel()
